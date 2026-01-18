@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     font-style: normal;
     background-color: #1A0B2E;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -15,23 +17,70 @@ nav {
     color: #FFFFFF;
     margin-top: 5px;
 }
-#wave{
-    background-image: linear-gradient(#9100F8,#FB09B4, #F7E93F);
+
+#wave {
+    background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: transparent;
     background-clip: text;
 }
-nav>div{
+
+.nav-list {
     display: flex;
     list-style: none;
-    gap: 1.25rem;
+    gap: 1.15rem;
 }
-nav>button{
+
+nav>button {
     padding: 10px 12px;
-    background-image: linear-gradient(#9100F8,#FB09B4, #F7E93F);
+    background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: white;
     border-radius: 2rem;
     border: none;
 }
-nav>button>i{
+
+nav>button>i {
     background-color: transparent;
+}
+
+.banner-section {
+    margin-top: 10px;
+    background-image: url(../assets/hero-bg.png);
+    background-color: transparent;
+    background-size: cover;
+    height: 100dvh;
+}
+
+.img-container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80dvh;
+    position: relative;
+}
+
+.hero-circle {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.microphone {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    left: 38.5rem;
+    top: 9rem;
+}
+
+#new {
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.5rem;
+    background-color: green;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    top: 5rem;
+    left: 48rem;
 }
