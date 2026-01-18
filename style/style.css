@@ -15,8 +15,9 @@ nav {
     align-items: center;
     color: #FFFFFF;
     margin-top: 1.1rem;
-    
+
 }
+
 #wave {
     background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: transparent;
@@ -71,6 +72,7 @@ nav>button>i {
     left: 39rem;
     top: 7.5rem;
 }
+
 #new {
     padding: 0.4rem 1.2rem;
     border-radius: 1.5rem;
@@ -81,40 +83,47 @@ nav>button>i {
     top: 3.8rem;
     left: 49rem;
 }
-.banner-2nd{
+
+.banner-2nd {
     text-align: center;
     color: #FFFFFF;
     background-color: transparent;
 }
-#LOS-btn{
+
+#LOS-btn {
     padding: 10px 12px;
     background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: white;
     border-radius: 2rem;
     border: none;
 }
-#subs-btn{
+
+#subs-btn {
     padding: 10px 12px;
     background-color: transparent;
     color: green;
     border-radius: 2rem;
     border: 0.1rem solid green;
 }
-.fa-btn{
+
+.fa-btn {
     background-color: transparent;
     padding: 0rem 0.2rem;
 }
-.About{
+
+.About {
     text-align: center;
     margin: 2rem;
     color: #FFFFFF;
 }
-hr{
+
+hr {
     width: 80%;
     font: 0.25 solid black;
     margin-left: 8.5rem;
 }
-.About2{
+
+.About2 {
     display: flex;
     justify-content: space-around;
     padding: 2rem 0rem;
@@ -122,55 +131,111 @@ hr{
     font-weight: 900;
     margin: 2rem 0;
 }
-.About2description{
+
+.About2description {
     color: #FFFFFF;
 }
-.fa-icon{
+
+.fa-icon {
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
 }
-.Why-Choose-TechWave{
+
+.Why-Choose-TechWave {
     background-color: #35116566;
     height: 100vh;
     width: auto;
 }
-#Featured-title{
+
+.headline {
     color: white;
     text-align: center;
-    margin: 1.5rem;
+    margin: 3rem 0;
 }
-.podcast-container{
+
+.podcast-container {
     display: flex;
     justify-content: space-evenly;
     height: 65vh;
     padding: 2rem;
 }
+
 .card {
-  box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #00FF88;
-  transition: 0.3s;
-  width: 25%;
-  background-color: #35116566;
-  border-radius: 2rem 2rem 0 0;
+    box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #9100F8;
+    transition: 0.5s;
+    width: 25%;
+    background-color: #35116566;
+    border-radius: 2rem 2rem 0 0;
 }
-.yt-video{
+
+.yt-video {
     width: 100%;
     height: 60%;
     border-radius: 2rem 2rem 0 0;
+    border: none;
 }
+
 .card:hover {
-  box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #9100F8;
+    box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #35116566;
 }
-.pod-title{
+
+.pod-title {
     padding: 0.4rem 0.6rem;
     background-color: transparent;
 }
-.container{
-    background-color:transparent;
+
+.container {
+    background-color: transparent;
     color: #FFFFFF;
 }
-.time{
+
+.time {
     padding: 0.4rem 0.4rem;
     color: #00FF88;
     background-color: #ffffff00;
 }
 
+.host-cotainer {
+    display: flex;
+    height: 50dvh;
+    width: 80dvw;
+    background-color: #35116566;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+   
+
+}
+
+.host {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+ 
+    gap: 1rem;
+}
+
+.host-img {
+    background-color: transparent;
+    border-radius: 6rem;
+    margin-left: 1rem;
+}
+#host-name{
+    background-color: transparent;
+    margin: 1.5rem 0;
+    color: #FFFFFF;
+}
+.host-details{
+    background-color: transparent;
+    word-wrap: break-word;
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+}
+.social-icon{
+    background-color: transparent;
+    font-size: 2rem;
+    background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    color: transparent;
+    background-clip: text;
+}
