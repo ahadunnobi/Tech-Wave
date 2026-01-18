@@ -15,9 +15,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     color: #FFFFFF;
-    margin-top: 5px;
+    margin-top: 1.1rem;
 }
-
 #wave {
     background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: transparent;
@@ -43,11 +42,10 @@ nav>button>i {
 }
 
 .banner-section {
-    margin-top: 10px;
     background-image: url(../assets/hero-bg.png);
     background-color: transparent;
     background-size: cover;
-    height: 100dvh;
+    height: 89dvh;
 }
 
 .img-container {
@@ -55,7 +53,7 @@ nav>button>i {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80dvh;
+    height: 68dvh;
     position: relative;
 }
 
@@ -63,17 +61,15 @@ nav>button>i {
     background-color: transparent;
     position: relative;
     z-index: 1;
-   
 }
 
 .microphone {
     background-color: transparent;
     position: absolute;
     z-index: 2;
-    left: 38.5rem;
-    top: 9rem;
+    left: 39rem;
+    top: 7.5rem;
 }
-
 #new {
     padding: 0.4rem 1.2rem;
     border-radius: 1.5rem;
@@ -81,6 +77,32 @@ nav>button>i {
     color: white;
     position: absolute;
     z-index: 3;
-    top: 5rem;
-    left: 48rem;
+    top: 3.8rem;
+    left: 49rem;
+}
+.banner-2nd{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+#LOS-btn{
+    padding: 10px 12px;
+    background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+#subs-btn{
+    padding: 10px 12px;
+    background-color: transparent;
+    color: green;
+    border-radius: 2rem;
+    border: 0.1rem solid green;
+}
+.fa-btn{
+    background-color: transparent;
+    padding: 0rem 0.2rem;
+}
+.n{
+    background-color: transparent;
 }
