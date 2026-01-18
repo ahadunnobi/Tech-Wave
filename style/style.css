@@ -118,7 +118,8 @@ nav>button>i {
     color: #FFFFFF;
     padding-top: 2rem;
 }
-#about-title{
+
+#about-title {
     margin: 1.2rem;
 }
 
@@ -162,7 +163,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     height: 65vh;
-   
+
 }
 
 .card {
@@ -202,12 +203,11 @@ hr {
 
 .host-cotainer {
     display: flex;
-    height: 50dvh;
+    height: 46dvh;
     width: 80dvw;
     background-color: #35116566;
     margin: 0 auto;
     border-radius: 2rem;
-    margin-bottom: rem;
 }
 
 .host {
@@ -223,35 +223,65 @@ hr {
     border-radius: 6rem;
     margin-left: 1rem;
 }
-#host-name{
+
+#host-name {
     background-color: transparent;
     margin: 1.5rem 0;
     color: #FFFFFF;
 }
-.host-details{
+
+.host-details {
     background-color: transparent;
     word-wrap: break-word;
     padding-bottom: 1rem;
     color: #FFFFFF;
 }
-.social-icon{
+
+.social-icon {
     background-color: transparent;
     font-size: 2rem;
     background-image: linear-gradient(#9100F8, #FB09B4, #F7E93F);
     color: transparent;
     background-clip: text;
 }
-footer>h1{
+
+footer>h1 {
     font-size: 4rem;
     color: #FFFFFF;
     background-color: transparent;
     padding: 1rem;
 }
-footer{
+
+footer {
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
-    height: 25dvh;
+    height: 30dvh;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0.7rem;
     background-position: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.footer-fa {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+footer>ul>li {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+footer>p {
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 1rem;
 }
