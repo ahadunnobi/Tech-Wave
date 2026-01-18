@@ -120,6 +120,7 @@ hr{
     padding: 2rem 0rem;
     color: #00FF88;
     font-weight: 900;
+    margin: 2rem 0;
 }
 .About2description{
     color: #FFFFFF;
@@ -128,3 +129,48 @@ hr{
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
 }
+.Why-Choose-TechWave{
+    background-color: #35116566;
+    height: 100vh;
+    width: auto;
+}
+#Featured-title{
+    color: white;
+    text-align: center;
+    margin: 1.5rem;
+}
+.podcast-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 65vh;
+    padding: 2rem;
+}
+.card {
+  box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #00FF88;
+  transition: 0.3s;
+  width: 25%;
+  background-color: #35116566;
+  border-radius: 2rem 2rem 0 0;
+}
+.yt-video{
+    width: 100%;
+    height: 60%;
+    border-radius: 2rem 2rem 0 0;
+}
+.card:hover {
+  box-shadow: 0.3rem 0.7rem 0.7rem 0.3rem #9100F8;
+}
+.pod-title{
+    padding: 0.4rem 0.6rem;
+    background-color: transparent;
+}
+.container{
+    background-color:transparent;
+    color: #FFFFFF;
+}
+.time{
+    padding: 0.4rem 0.4rem;
+    color: #00FF88;
+    background-color: #ffffff00;
+}
+
