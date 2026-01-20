@@ -3,10 +3,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+body {
     background-color: #1A0B2E;
+    overflow-x: hidden;
 }
 
 nav {
@@ -42,6 +47,14 @@ nav>button>i {
     background-color: transparent;
 }
 
+.ham-bar {
+    display: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 .banner-section {
     background-image: url(../assets/hero-bg.png);
     background-position: center;
@@ -63,14 +76,45 @@ nav>button>i {
     background-color: transparent;
     position: relative;
     z-index: 1;
+    height: 65vh;
 }
 
 .microphone {
     background-color: transparent;
     position: absolute;
     z-index: 2;
-    left: 39rem;
-    top: 7.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    height: 35vh;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.7);
+    }
+
+    25% {
+        transform: translateY(-5px) rotate(-3deg) scale(1.05);
+        box-shadow: 0 0 10px 3px rgba(0, 128, 0, 0.4);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        box-shadow: 0 0 15px 5px rgba(0, 128, 0, 0.3);
+    }
+
+    75% {
+        transform: translateY(-5px) rotate(3deg) scale(1.05);
+        box-shadow: 0 0 10px 3px rgba(0, 128, 0, 0.4);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 128, 0, 0);
+    }
 }
 
 #new {
@@ -78,16 +122,20 @@ nav>button>i {
     border-radius: 1.5rem;
     background-color: green;
     color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
     position: absolute;
     z-index: 3;
-    top: 3.8rem;
-    left: 49rem;
+    top: 15%;
+    left: 55%;
+    animation: wave 2.5s ease-in-out infinite;
 }
 
 .banner-2nd {
     text-align: center;
     color: #FFFFFF;
     background-color: transparent;
+    padding: 0 1rem;
 }
 
 #LOS-btn {
@@ -112,30 +160,37 @@ nav>button>i {
 }
 
 .About {
-    height: 45dvh;
+    height: auto;
     text-align: center;
-    margin: rem;
     color: #FFFFFF;
-    padding-top: 2rem;
+    padding: 2rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #about-title {
-    margin: 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
 
 hr {
     width: 80%;
-    font: 0.15 solid rgba(129, 112, 112, 0.404);
-    margin-left: 8.5rem;
+    border: 0.5px solid rgba(129, 112, 112, 0.4);
+    margin: 0 auto;
 }
 
 .About2 {
-    height: 50vh;
+    height: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     color: #00FF88;
     font-weight: 900;
     align-items: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .About2description {
@@ -149,8 +204,18 @@ hr {
 
 .Why-Choose-TechWave {
     background-color: #35116566;
-    height: 180vh;
+    padding: 2rem 1rem;
 }
+
+.featured-episodes {
+    padding-top: 5rem;
+}
+
+.meet-the-host {
+    padding-bottom: 5rem;
+}
+
+
 
 #WCTW-TITLE {
     text-align: center;
@@ -162,8 +227,9 @@ hr {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 100dvh;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
     background-color: transparent;
 }
 
@@ -171,45 +237,34 @@ hr {
     grid-row: 1 / span 2;
     background-color: #35116566;
     border-radius: 2rem;
-    margin: 1rem;
-    margin-top: 1.5rem;
-    height: auto;
-    width: 30vw;
-
+    padding: 1rem;
 }
 
 .WCTW-card-2 {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     background-color: #35116566;
     border-radius: 2rem;
-    margin: 1rem;
-    margin-top: 1.5rem;
-    height: 30vh;
-    width: auto;
+    padding: 1rem;
 }
 
 .WCTW-card-3 {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     background-color: #35116566;
     border-radius: 2rem;
-    margin-top: 1.5rem;
-    height: 30vh;
-    width: auto;
+    padding: 1rem;
 }
 
 .WCTW-card-4 {
     grid-column: 1 / span 2;
     background-color: #35116566;
     border-radius: 2rem;
-   
-    margin-top: 1.5rem;
+    padding: 1rem;
 }
 
 .WCTW-card-5 {
     background-color: #35116566;
     border-radius: 2rem;
-  
-    margin-top: 1.5rem;
+    padding: 1rem;
 }
 
 .grid-img {
@@ -235,75 +290,23 @@ hr {
     font-size: 3.5rem;
     background: -webkit-linear-gradient(#eee, #333);
     background-clip: text;
-   
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .headline {
     color: white;
     text-align: center;
-    margin: 2.5rem 0;
+    margin-bottom: 2.5rem;
 }
 
 .podcast-container {
     display: flex;
     justify-content: space-evenly;
-    height: 65vh;
-
+    height: auto;
+    min-height: 50vh;
+    gap: 1.5rem;
+    padding: 0 2rem 2rem;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -311,12 +314,12 @@ hr {
     transition: 0.5s;
     width: 25%;
     background-color: #35116566;
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 2rem 2rem 2rem 2rem;
 }
 
 .yt-video {
     width: 100%;
-    height: 60%;
+    aspect-ratio: 16 / 9;
     border-radius: 2rem 2rem 0 0;
     border: none;
 }
@@ -333,6 +336,7 @@ hr {
 .container {
     background-color: transparent;
     color: #FFFFFF;
+    padding: 0.5rem 1rem;
 }
 
 .time {
@@ -341,13 +345,15 @@ hr {
     background-color: #ffffff00;
 }
 
-.host-cotainer {
+.host-container {
     display: flex;
-    height: 46dvh;
+    height: auto;
+    min-height: 40vh;
     width: 80dvw;
     background-color: #35116566;
     margin: 0 auto;
     border-radius: 2rem;
+    padding: 2rem;
 }
 
 .host {
@@ -387,7 +393,7 @@ hr {
 
 .fa-border {
     padding: 0.7rem;
-    border-radius: 5rem;
+    border-radius: 25rem;
     border: 1px solid rgba(83, 60, 114, 1);
 }
 
@@ -401,10 +407,20 @@ footer>h1 {
 footer {
     background-image: url(../assets/footer-bg.png);
     background-size: cover;
-    height: 30dvh;
+    height: auto;
+    min-height: 30dvh;
     text-align: center;
     margin-top: 0.7rem;
     background-position: center;
+    padding: 3rem 0;
+}
+
+.footer-social-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #FFFFFF;
 }
 
 .footer-social {
@@ -419,15 +435,164 @@ footer {
 .footer-fa {
     color: #FFFFFF;
     background-color: transparent;
+    margin-right: 0.2rem;
 }
 
 footer>ul>li {
     color: #FFFFFF;
     background-color: transparent;
+
 }
 
 footer>p {
     color: #FFFFFF;
     background-color: transparent;
     padding: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    .banner-section {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .ham-bar {
+        display: block;
+        font-size: 1.8rem;
+    }
+
+    .nav-list,
+    nav>button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .img-container {
+        height: 35vh;
+        margin-top: 2rem;
+    }
+
+
+    .hero-circle {
+        height: 35vh;
+    }
+
+    .microphone {
+        height: 15vh;
+    }
+
+    #new {
+        top: 5%;
+        left: 55%;
+        font-size: 0.65rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .banner-2nd h1 {
+        font-size: 1.2rem;
+    }
+
+    .banner-2nd p {
+        font-size: 0.8rem;
+    }
+
+    .banner-2nd>div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #LOS-btn,
+    #subs-btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 1rem;
+    }
+
+    .WCTW-card-1,
+    .WCTW-card-2,
+    .WCTW-card-3,
+    .WCTW-card-4,
+    .WCTW-card-5 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .About {
+        padding: 0.5rem 1rem;
+    }
+
+    #about-title {
+        font-size: 1.8rem;
+    }
+
+    .About2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .featured-episodes {
+        padding-top: 3rem;
+    }
+
+    .meet-the-host {
+        padding-bottom: 3rem;
+    }
+
+    .podcast-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 92%;
+        height: auto;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .host-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .host {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-img {
+        margin-left: 0;
+    }
+    .footer-social-top{
+    display: block;
+    }
+    .footer-social{
+        padding: 0.2rem 0;
+    }
+
 }
