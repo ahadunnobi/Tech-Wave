@@ -76,7 +76,7 @@ nav>button>i {
     background-color: transparent;
     position: relative;
     z-index: 1;
-    height: 65vh;
+    height: 60vh;
 }
 
 .microphone {
@@ -127,7 +127,7 @@ nav>button>i {
     position: absolute;
     z-index: 3;
     top: 15%;
-    left: 55%;
+    left: 58%;
     animation: wave 2.5s ease-in-out infinite;
 }
 
